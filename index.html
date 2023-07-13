@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Captcha</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Random Captcha Generator</h3>
+        <div class="captchaBox">
+            <div class="imgCaptcha">
+                <img src="img/captcha1.png">
+                <span class="captchaCode"></span>
+            </div>
+            <button id="refresh" class="btn btn-primary"><i class="fa-solid fa-rotate-right fa-2xl"></i></button>
+        </div>
+        <div class="answerBox">
+            <input type="text" id="answer">
+            <button id="check" class="btn btn-primary">Check</button>
+        </div>
+        <span class="result">You can try 3 times</span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
